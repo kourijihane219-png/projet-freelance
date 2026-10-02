@@ -167,6 +167,7 @@ footer {
         font-size: 32px;
     }
 
+
     .hero-content {
         width: 90%;
     }
@@ -177,5 +178,140 @@ footer {
 
     .card {
         width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+}
+
+.profil-container {
+    width: 900px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+/* Profil principal */
+
+.profil {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profil h1 {
+    margin-bottom: 5px;
+}
+
+.profil h2 {
+    color: #3478f6;
+}
+
+.ville {
+    color: #777;
+}
+
+.description {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: #555;
+}
+
+button {
+    background-color: #3478f6;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #245dcc;
+}
+
+/* Sections */
+
+.section {
+    background-color: white;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #3478f6;
+    padding-bottom: 10px;
+}
+
+/* Compétences */
+
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.competences span {
+    background-color: #e8f0ff;
+    color: #3478f6;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    gap: 15px;
+}
+
+.service {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service h3 {
+    color: #3478f6;
+}
+
+.service p {
+    color: #666;
+}
+
+.etoiles {
+    font-size: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .services {
+        flex-direction: column;
+    }
+
+    .profil-container {
+        width: 95%;
     }
 }
